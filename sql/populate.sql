@@ -1,7 +1,7 @@
 
 insert into customer (first_name, last_name, username, dob, password, confirmpassword, email, mobile_number) values ('Martyn', 'Van der Spohr', 'mvanderspohr0', '8/10/2001', 'b0tbG1wm7YzZ', 'b0tbG1wm7YzZ', 'mvanderspohr0@google.ca', 85553642);
 insert into customer (first_name, last_name, username, dob, password, confirmpassword, email, mobile_number) values ('Ben', 'McVeigh', 'bmcveigh1', '3/3/2001', 'PWdKZvjhJ', 'PWdKZvjhJ', 'bmcveigh1@fema.gov', 85553642);
-insert into customer (first_name, last_name, username, dob, password, confirmpassword, email, mobile_number) values ('Clair', 'Scutter', 'cscutter2', '10/12/2001', 'ZKyyUGrahIkf', 'ZKyyUGrahIkf', 'cscutter2@vinaora.com');
+insert into customer (first_name, last_name, username, dob, password, confirmpassword, email, mobile_number) values ('Clair', 'Scutter', 'cscutter2', '10/12/2001', 'ZKyyUGrahIkf', 'ZKyyUGrahIkf', 'cscutter2@vinaora.com', 85553655);
 insert into customer (first_name, last_name, username, dob, password, confirmpassword, email, mobile_number) values ('Marinna', 'Greathead', 'mgreathead3', '10/12/2001', 'faROy6iNYg0w', 'faROy6iNYg0w', 'mgreathead3@chronoengine.com', 85553643);
 insert into customer (first_name, last_name, username, dob, password, confirmpassword, email, mobile_number) values ('Keith', 'Sprulls', 'ksprulls4', '6/2/2001', 'V7fwCF8s', 'V7fwCF8s', 'ksprulls4@fda.gov', 85553644);
 insert into customer (first_name, last_name, username, dob, password, confirmpassword, email, mobile_number) values ('Arlin', 'Dimond', 'adimond5', '1/1/2002', 'HwjmCMgNKBG', 'HwjmCMgNKBG', 'adimond5@twitpic.com', 85553645);
