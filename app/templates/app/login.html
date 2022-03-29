@@ -1,0 +1,40 @@
+<body>
+  {% if messages %}
+  <ul class="messages">
+      {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+  </ul>
+  {% endif %}
+
+</body>
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="imgcontainer">
+    </div>
+
+    <div class="container">
+      <button><a href="index">Home Page</a></button>
+      <button class="signup"><a href="signup">Sign up an account</a></button>
+    </div>
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Email</b></label>
+      <input type="text" placeholder="Enter email" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type = "submit" value = "Login"/>
+  
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+

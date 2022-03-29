@@ -1,0 +1,42 @@
+{% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{% block content %}
+{% load static %}
+
+<html>
+<body>
+    <h2>Edit</h2>
+    <a href="profile">Back to profile</a>
+
+    <!-- Create a Form -->
+    <form method="POST">
+        <!-- Security token by Django -->
+        {% csrf_token %}
+        <!-- form -->
+        <div id="div_id_first_name" class="control-group"> <label for="id_first_name" class="control-label requiredField">
+        Car Make<span class="asteriskField">*</span> </label> <div class="controls"> <input type="text" name="car_make" value="{{car_make}}" maxlength="64" class="textinput textInput" required="" id="id_first_name"> </div> </div> 
+
+        <div id="div_id_first_name" class="control-group"> <label for="id_first_name" class="control-label requiredField">
+        Car Model<span class="asteriskField">*</span> </label> <div class="controls"> <input type="text" name="car_model" value="{{car_model}}" maxlength="64" class="textinput textInput" required="" id="id_first_name"> </div> </div> 
+
+        <div id="div_id_first_name" class="control-group"> <label for="id_first_name" class="control-label requiredField">
+        Year<span class="asteriskField">*</span> </label> <div class="controls"> <input type="text" name="year" value="{{year}}" maxlength="64" class="textinput textInput" required="" id="id_first_name"> </div> </div> 
+
+        <div id="div_id_last_name" class="control-group"> <label for="id_last_name" class="control-label requiredField">
+        Mileage<span class="asteriskField">*</span> </label> <div class="controls"> <input type="text" name="mileage" value="{{mileage}}" maxlength="64" class="textinput textInput" required="" id="id_last_name"> </div> </div> 
+
+        <div id="div_id_phone_number" class="control-group"> <label for="id_phone_number" class="control-label requiredField">
+        Rate<span class="asteriskField">*</span> </label> <div class="controls"> <input type="number" name="rate" value="{{rate}}"  required="" id="id_phone_number"> </div> </div> 
+
+        <input type = "submit" value = "Confirm changes"/>
+        <br>
+    </form>
+</body>
+</html>
+{% endblock %}
